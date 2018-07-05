@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: Circular,"나눔 고딕","Nanum Gothic","맑은 고딕","Malgun Gothic","Apple Gothic","돋움",Dotum,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+@media screen and (min-width: 768px) {
+
+.MainTopImage {
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.MainTopImage img {
+    height:100vh;
+    width: auto;
+}
+
+  .MainTopView{
+    position: relative;  
+  }
+
+ .MainTopView__Navi {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 80px;
+    align-items: center;
+  }
+
+  .MainTopView__Navi__Text {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    height: 80px;
+  }
+
+  .MainTopView__Navi__Text li {
+    margin: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .MainTopView__Navi__Main__Text__Links {
+    text-decoration: none;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .MainTopView__Navi__Main__Text__Links__Login {
+     text-decoration: none;
+     margin-left: 8px;
+     margin-right: 16px;
+   }
+
+   .MainTopView__Navi__Logo a img {
+       width: 34px;
+       height: 34px; 
+   }
+
+  .MainTopView__Navi__Logo {
+    padding: 24px 22px 24px 22px;
+  }
+
+}
