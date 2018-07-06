@@ -7,26 +7,8 @@ class MainTopView extends Component {
     render() {
         return (
             <div className='MainTopView'>
-                <MainTopImage />
                 <MainTopNavi />
             </div>     
-        );
-    }
-}
-
-class MainTopImage extends Component {
-    images = [
-       'http://money-tourism.gr/wp-content/uploads/2017/11/family-beach.jpg',
-       'https://i.ytimg.com/vi/GygcPFfi440/maxresdefault.jpg',
-       'https://kr.best-wallpaper.net/wallpaper/2560x1600/1506/Japan-girl-kimono-music_2560x1600.jpg',
-       'https://www.intrepidtravel.com/adventures/wp-content/uploads/2018/02/Intrepid-Travel-Canada_Jasper_Athabasca-River_Cycling_13.jpg'
-    ];
-
-    render() {
-        return (
-            <div className="MainTopImage">
-                <img src={this.images[0]}/>     
-            </div>
         );
     }
 }

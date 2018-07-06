@@ -10,20 +10,18 @@ body {
 
 @media screen and (min-width: 768px) {
 
-.MainTopImage {
-    width: 100%;
-    max-height: 100vh;
-    overflow: hidden;
-}
+ .MainTopView {
+    /* The image used */
+    background-image: url("https://i.ytimg.com/vi/GygcPFfi440/maxresdefault.jpg");
 
-.MainTopImage img {
-    height:100vh;
-    width: auto;
-}
+    /* Full height */
+    height: 100vh; 
 
-  .MainTopView{
-    position: relative;  
-  }
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
 
  .MainTopView__Navi {
     display: flex;
@@ -50,6 +48,10 @@ body {
     align-items: center;
     margin-left: 8px;
     margin-right: 8px;
+  }
+
+  .MainTopView__Navi__Text li a {
+    color: white;
   }
 
   .MainTopView__Navi__Main__Text__Links {
