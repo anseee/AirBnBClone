@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './MainTopView.css';
 import AirbnbLogo from './image/airbnbLogo.png';
-
+import SearchIcon from './image/search.png';
 
 class MainTopView extends Component {
     render() {
         return (
             <div className='MainTopView'>
                 <MainTopNavi />
+                <MainTopSpace />
+                <MainTopTextAndSearchBar />
             </div>     
         );
     }
@@ -28,4 +30,26 @@ function MainTopNavi() {
     ) 
 }
 
+function MainTopSpace() {
+    return (
+       <div className="MainTopSpace">
+       </div> 
+    )
+}
+
+function MainTopTextAndSearchBar() {
+    return (
+        <div className="MainTopTextAndSearchBar">
+            <div className="MainTopTextAndSearchBar__Text">
+            전 세계의 특색 있는 숙소와 트립을 <br/>클론하는중
+            </div>
+            <div className="MainTopTextAndSearchBar__SearchBar">
+                <div className="MainTopTextAndSearchBar__SearchBar__Center__Align">
+                    <img src={SearchIcon} className="MainTopTextAndSearchBar__SearchBar__Icon"/>
+                    <input type="text" placeholder="&ldquo;멕시코시티&rdquo;을(를) 검색해보세요" className="MainTopTextAndSearchBar__SearchBar__Input" />
+                </div>
+            </div>
+        </div>
+    )
+}
 export default MainTopView;
